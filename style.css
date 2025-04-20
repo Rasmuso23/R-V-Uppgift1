@@ -1,21 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    margin: 0;
-    display: flex;
+    font-family: Arial, sans-serif;
 }
 
 header {
-    display: flex;
     background: #000069;
     color: white;
+    
+}
+
+.mobile-header {
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 16px;
-    position: sticky;
-    top: 0;
-    width: auto;
-    height: 4.3rem;
-    font-family: Arial, Helvetica, sans-serif;
-    
+    padding: 1rem;
 }
 
 .logo {
@@ -23,30 +26,30 @@ header {
     height: auto;
 }
 
-.header-menu {
-    flex-wrap: nowrap;
+.mobile-header section {
     display: flex;
-    flex-direction: row;
-    margin: 10rem;
+    gap: 1rem;
 }
 
-.header-choice {
-    margin: 1rem;
-    justify-content: space-between;
-    align-items: 1rem;
-}
-header a {
-    margin-left: 2rem;
-}
-
-a {
+.user-button,
+.menu-button {
+    background: none;
+    border: none;
     color: white;
-    text-decoration: None;
+    font-size: 28px;
+    cursor: pointer;
 }
 
-.outlined-button {
-    outline: auto white;
-    
+.menu {
+    display: flex;
+    justify-content: flex-start;
+    gap: 0.8rem;
+    padding: 1rem;
+    background: #000069;
 }
 
-
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
