@@ -1,0 +1,14 @@
+.hero {
+    background-color: #000069;
+    text-align: center;
+    padding: 32px 0px 24px;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.4;
+    max-width: 700px;
+    margin: 0 auto;
+}

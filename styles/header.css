@@ -1,0 +1,47 @@
+header {
+    background: #000069;
+    color: white;
+    position: sticky;
+    width: 100%;
+    top: 0;
+}
+
+.mobile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.logo {
+    width: 159px;
+    height: auto;
+}
+
+.mobile-header section {
+    display: flex;
+    gap: 1rem;
+}
+
+.user-button,
+.menu-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+    padding: 1rem;
+    background: #000069;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
