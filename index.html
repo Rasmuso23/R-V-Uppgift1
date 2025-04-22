@@ -35,6 +35,36 @@
             <a href="#">Hyrbilar</a>
         </nav>
     </header>
+
+    <main>
+        <section class="search">
+            <form>
+                <span class="radio-group">
+                    <label class="radio-tickets">
+                        <input type="radio" name="trip" checked>
+                        Tur/Retur
+                    </label>
+                    <label class="radio-tickets">
+                        <input type="radio" name="trip">
+                        Enkel
+                    </label>
+                    <label class="radio-tickets">
+                        <input type="radio" name="trip">
+                        Multi-City
+                    </label>
+                </span>
+
+                <label for="from">Från</label>
+                <input type="text" id="from" placeholder="Från">
+
+                <label for="to">Till</label>
+                <input type="text" id="to" placeholder="Till">
+
+                <button type="submit">Sök flygresor</button>
+            </form>
+        </section>
+    </main>
+
     <footer class="footer">
         <section class="footer-links">
             <p>Produkter och tjänster</p>
