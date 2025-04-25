@@ -1,0 +1,15 @@
+.statements {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    gap: 2rem;
+    margin: 0 auto 2rem;
+    column-gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
