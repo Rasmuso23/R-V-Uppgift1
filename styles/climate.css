@@ -1,0 +1,17 @@
+.climate {
+    background-image: url('/Pictures/plane-climate.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem;
+    margin: auto;
+}
+
+h2 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
