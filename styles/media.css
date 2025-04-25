@@ -1,0 +1,29 @@
+@media (min-width: 768px) {
+    
+    header {
+        
+        position: sticky;
+        top: 0;
+    }
+    
+    .hero {
+        background-image: url("../Pictures/hero.jpg");
+        background-size: cover;
+        background-position: center;
+        padding: 6rem 1rem 4rem;
+    }
+
+    .hero h1 {
+        color: white;
+        max-width: 800px;
+        text-shadow: 0 0 10px black;
+        margin: 0 auto 2rem;
+    }
+
+    .search {
+        background: white;
+        padding: 2rem;
+        max-width: 750px;
+        margin: 0 auto;
+    }
+}
