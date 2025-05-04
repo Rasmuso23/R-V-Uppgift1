@@ -12,3 +12,20 @@
     max-width: 700px;
     margin: 0 auto;
 }
+
+@media (min-width: 768px) {
+    
+    .hero {
+        background-image: url("../Pictures/hero.jpg");
+        background-size: cover;
+        background-position: center;
+        padding: 6rem 1rem 4rem;
+    }
+
+    .hero h1 {
+        color: white;
+        max-width: 800px;
+        text-shadow: 0 0 10px black;
+        margin: 0 auto 2rem;
+    }
+}

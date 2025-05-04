@@ -32,3 +32,13 @@
 .search-input {
     text-align: left;
 }
+
+@media (min-width: 768px) {
+    
+    .search {
+        background: white;
+        padding: 2rem;
+        max-width: 750px;
+        margin: 0 auto;
+    }
+}

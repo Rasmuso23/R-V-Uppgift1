@@ -6,11 +6,20 @@ header {
     top: 0;
 }
 
-.tablet-header {
+.site-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem;
+}
+
+.header-max {
+    max-width: 1180px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
@@ -18,12 +27,17 @@ header {
     height: auto;
 }
 
-.mobile-header section {
-    display: flex;
-    gap: 1rem;
+.language,
+.help-icon {
+    display: none;
 }
 
-.user-button,
+.user-button {
+    border: 1px solid white;
+    padding: 4px 6px;
+    border-radius: 1px;
+}
+
 .menu-button {
     background: none;
     border: none;
@@ -44,4 +58,81 @@ header {
     color: white;
     text-decoration: none;
     font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+    
+    .site-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 40px;
+        flex-wrap: nowrap;
+        gap: 0.5rem;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1.5rem;
+        max-width: none;
+        width: auto;
+        flex-grow: 0;
+        padding: 0;
+    }
+
+    .header-left {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        flex-grow: 1;
+    }
+
+    .language,
+    .help-icon {
+        display: inline-block;
+        color: white;
+        font-size: 1rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 4px 6px;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    .user-button {
+        border: 1px solid white;
+        padding: 4px 6px;
+        border-radius: 1px;
+    }
+
+    .logo {
+        width: 160px;
+        flex-shrink: 0;
+    }
+
+    .header-right {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        flex-shrink: 0;
+    }
+}
+
+@media (min-width: 970px) {
+    .site-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 100px;
+        gap: 2rem;
+    }
+
+    .logo {
+        width: 200px;
+    }
 }
