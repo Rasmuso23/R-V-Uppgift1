@@ -106,7 +106,9 @@ footer {
       text-decoration-color: white;
       text-decoration-thickness: 1px;
       text-underline-offset: 4px;
-      display: inline; /* viktigt: inline så strecket bara blir så långt som texten */
+      margin-bottom: 1rem;
+      display: inline block; /* viktigt: inline så strecket bara blir så långt som texten */
+
     }
   
     .footer-group a:hover {
