@@ -1,33 +1,56 @@
 .climate {
+    display: flex;
+    flex-direction: column; /* standard: mobil */
+    align-items: center;
     text-align: center;
-    max-width: 600px;
+    max-width: 1000px;
     margin: 2rem auto;
-    padding: 1rem;
+    padding: 2rem;
     font-family: Arial, sans-serif;
-}
-
-.climate img {
+    gap: 1rem;
+  }
+  
+  .climate img {
+    order: -1; /* Bild kommer först på mobil */
     width: 200px;
     height: auto;
-    margin-bottom: 20px;
-}
-
-.climate h2 {
-    margin: 1rem;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
+    margin-bottom: 1rem;
+  }
+  
+  .climate h2 {
+    font-size: 1.2rem;
     font-weight: bold;
-}
-
-.climate p {
-    display: flex;
-    
-}
-
-.climate a {
-    display: inline-block;
-    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .climate p {
+    display: block;
+    margin-bottom: 1rem;
+  }
+  
+  .climate a {
     color: blue;
     text-decoration: underline;
-}
-
+  }
+  
+  /* Större skärmar: text vänster, bild höger */
+  @media (min-width: 768px) {
+    .climate {
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: center;
+      text-align: left;
+      gap: 2rem;
+    }
+  
+    .climate img {
+      order: 2; /* Bild kommer till höger */
+      width: 250px;
+      margin: 0;
+    }
+  
+    .climate > div {
+      flex: 1;
+    }
+  }
+  

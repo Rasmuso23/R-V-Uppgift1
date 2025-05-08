@@ -1,20 +1,42 @@
 footer {
-    display: flex;
     background: #000069;
     color: white;
     padding: 2rem 1rem;
-    font-size: 1rem;
-    flex-direction: column;
+    font-size: 0.9rem;
+  }
+  
+  .footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto 2rem;
     gap: 2rem;
-}
-
-.footer-links p {
-    border-top: 1px solid white;
-    padding: 0.8rem 0;
+  }
+  
+  .footer-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    min-width: 200px;
+  }
+  
+  .footer-group h3 {
     font-weight: bold;
-}
-
-.footer-buttons {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-group a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  
+  .footer-group a:hover {
+    text-decoration: underline;
+  }
+  
+  .login-group button {
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -22,27 +44,85 @@ footer {
     border: 1px solid white;
     color: white;
     padding: 0.5rem 1rem;
-    cursor: pointer;
     font-size: 1rem;
-}
-
-.swedish-button {
-    margin-top: 1rem;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+  }
+  
+  .swedish-button {
     background: none;
     border: 1px solid white;
     color: white;
     padding: 0.5rem 1rem;
-    font-size: 1rem;
     cursor: pointer;
-}
-
-.footer-payments p {
+  }
+  
+  .footer-payments {
     text-align: center;
-    font-size: 1rem;
-}
-
-.footer-rights {
+    margin-bottom: 2rem;
+  }
+  
+  .footer-payments img {
+    max-width: 90%;
+    height: auto;
+  }
+  
+  .footer-bottom {
     text-align: center;
     font-size: 0.75rem;
     line-height: 1.4;
-}
+  }
+
+  @media (max-width: 767px) {
+    .footer-top {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  
+    .footer-group {
+      border-top: 1px solid white;
+      padding-top: 1rem;
+    }
+  
+    .footer-group h3 {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+  
+    .footer-group a {
+      font-size: 0.9rem;
+      padding-left: 1rem;
+    }
+  
+    .login-group {
+      border: none;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .footer-group a {
+      color: white;
+      text-decoration: underline;
+      text-decoration-color: white;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 4px;
+      display: inline; /* viktigt: inline så strecket bara blir så långt som texten */
+    }
+  
+    .footer-group a:hover {
+      text-decoration-color: #ccc; /* ljusare vid hover om du vill */
+    }
+  }
+
+  @media (max-width: 767px) {
+    .footer-group a {
+      display: none;
+    }
+  }
+
+  
+  
+  
+  
+  
+  

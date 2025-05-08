@@ -7,3 +7,16 @@
 @import url('statements.css');
 @import url('information.css');
 @import url('climate.css');
+
+@media (min-width: 768px) {
+    .information {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    .information article {
+        flex: 1;
+    }
+}
