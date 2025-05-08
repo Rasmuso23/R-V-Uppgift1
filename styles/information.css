@@ -20,16 +20,11 @@
 }
 
 @media (min-width: 768px) {
-    .information {
-      display: flex;
-      justify-content: space-between;
-      gap: 2rem;
-      max-width: 1180px;
-      margin: 0 auto;
-      padding: 2rem;
+    .information-content {
+      flex-direction: row;
     }
   
-    .information article {
+    .information-content article {
       flex: 1;
     }
   }
